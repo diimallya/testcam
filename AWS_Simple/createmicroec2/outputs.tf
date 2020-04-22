@@ -5,7 +5,7 @@
 #####################################################################
 
 output "vm_ip" {
-  value = "Public : ${aws_instance.aws_instance.ipv4_address}"
+  value = "Public : ${aws_instance.aws_instance.private_ip}"
 }
 
 output "sample_message" {
