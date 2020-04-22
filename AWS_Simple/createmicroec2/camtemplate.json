@@ -8,6 +8,27 @@
      "template_provider": "Amazon EC2"
    },
    "metadata": {
-     "bullets": []
+     "bullets": [ 
+     {
+         "title": "Clouds",
+         "description": "AWS"
+       },
+       {
+         "title": "Operating systems supported",
+         "description": "Linux"
+       },
+       {
+         "title": "Topology",
+         "description": "AWS EC2: 1 virtual machine"
+       },
+       {
+         "title": "Default virtual machine settings",
+         "description": "<ul><li>IBM Cloud:<ul style=\"margin-left: 20px;\"><li>Flavor: Cores = 1, Memory = 1GB, Storage = 25GB SAN</li><li>Network: Private IP - Computed, Public IP - Computed</li></ul></li></ul>"
+       },
+       {
+         "title": "Usage and special notes",
+         "description": "<ol class=\"list-numbering\"><li>Creates a virtual server with an ssh key provided by the user in a datacenter specified by the user.</li><li>Deployment takes approximately 5 minutes to complete.</li></ol>"
+       }
+       ]
    }
  }

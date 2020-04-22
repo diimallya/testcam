@@ -35,7 +35,7 @@
     {
       "name": "aws_instance_aws_instance_type",
       "label": "Aws Instance Aws Instance Type",
-      "description": "Generated",
+      "description": "Enter type of ec2 instance",
       "type": "string",
       "default": "",
       "regex": "",
@@ -89,5 +89,26 @@
       "immutable_after_create": false
     }
   ],
-  "template_output_params": [ ]
+  "template_output_params": [
+    {
+      "name": "vm_ip",
+      "label": "Virtual Machine IP",
+      "description": "vm ip descr",
+      "group_name": "",
+      "secured": false,
+      "hidden": false,
+      "shortname": "vip",
+      "type": "string"
+    },
+    {
+      "name": "sample_message",
+      "label": "Sample Message",
+      "description": null,
+      "group_name": "",
+      "secured": false,
+      "hidden": false,
+      "shortname": "",
+      "type": "string"
+    }
+  ]
 }

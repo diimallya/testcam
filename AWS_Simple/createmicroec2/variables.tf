@@ -11,7 +11,7 @@ variable "aws_instance_ami" {
 
 variable "aws_instance_aws_instance_type" {
   type = "string"
-  description = "Generated"
+  description = "Enter type of ec2 instance"
 }
 
 variable "availability_zone" {

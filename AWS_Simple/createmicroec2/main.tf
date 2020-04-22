@@ -31,3 +31,4 @@ resource "aws_key_pair" "auth" {
     key_name = "${var.aws_key_pair_name}"
     public_key = "${tls_private_key.ssh.public_key_openssh}"
 }
+
