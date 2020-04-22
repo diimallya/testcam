@@ -1,5 +1,5 @@
 {
-   "name": "createmicroec2",
+   "name": "Create Micro-EC2 on AWS",
    "description": "Description for createmicroec2.",
    "type": "userCreated",
    "manifest": {
