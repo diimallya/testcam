@@ -91,18 +91,28 @@
   ],
   "template_output_params": [
     {
-      "name": "vm_ip",
-      "label": "Virtual Machine IP",
-      "description": "vm ip descr",
+      "name": "vm_public_ip",
+      "label": "Vm Public Ip",
+      "description": "Public IP of the newly created VM",
       "group_name": "",
       "secured": false,
       "hidden": false,
-      "shortname": "vip",
+      "shortname": "",
       "type": "string"
     },
     {
       "name": "sample_message",
       "label": "Sample Message",
+      "description": "null",
+      "group_name": "",
+      "secured": false,
+      "hidden": false,
+      "shortname": "",
+      "type": "string"
+    },
+    {
+      "name": "vm_ssh_private_key",
+      "label": "Vm Ssh Private Key",
       "description": null,
       "group_name": "",
       "secured": false,
