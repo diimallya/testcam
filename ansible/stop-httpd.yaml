@@ -1,0 +1,12 @@
+---
+- name: This removes httpd webserver
+  hosts: all
+  tasks:
+  - name: ensure httpd is running
+    service:
+      name: httpd 
+      state: stopped
+  - name: Install apache packages 
+    yum:
+      name: httpd
+      state: absent
