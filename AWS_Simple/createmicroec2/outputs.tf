@@ -5,7 +5,7 @@
 #####################################################################
 
 output "vm_public_ip" {
-  value = "Private IP : ${aws_instance.aws_instance.public_ip}"
+  value = "${aws_instance.aws_instance.public_ip}"
 }
 
 output "sample_message" {
