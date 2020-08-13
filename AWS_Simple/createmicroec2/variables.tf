@@ -37,7 +37,17 @@ data "aws_ami" "aws_ami" {
 
   filter {
     name   = "name"
-    values = ["Amazon Linux AMI *"]
+    values = ["amzn2-ami-hvm-2.0.2020*"]
+  }
+  
+  filter {
+      name   = "architecture"
+      values = ["x86_64"]
+  }
+
+  filter {
+      name   = "root-device-type"
+      values = ["ebs"]
   }
 
   owners = ["${var.aws_ami_owner_id}"]
