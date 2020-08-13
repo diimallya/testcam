@@ -42,13 +42,10 @@ variable "aws_image" {
 # Lookup for AMI based on image name and owner ID
 data "aws_ami" "aws_ami" {
   most_recent = true
-
+  
   filter {
     name   = "name"
     values = ["${var.aws_image}*"]
   }
-  filter {
-    name = "owner-id"
-    values = ["${var.aws_ami_owner_id}"]
-  }
+  owners = ["${var.aws_ami_owner_id}"]
 }
