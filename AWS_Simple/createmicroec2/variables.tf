@@ -24,7 +24,7 @@ variable "aws_key_pair_name" {
 
 variable "aws_region" {
   type = "string"
-  description = "Generated"
+  description = "AWS Region"
   default = "us-east-2"
 }
  
@@ -33,22 +33,19 @@ variable "aws_ami_owner_id" {
   default     = "938135568375"
 }
 
+variable "aws_image" {
+  type        = "string"
+  description = "Operating system image id / template that should be used when creating the virtual image"
+  default     = "ubuntu/images/hvm-ssd/ubuntu-trusty-14.04-amd64-server-*"
+}
+
+# Lookup for AMI based on image name and owner ID
 data "aws_ami" "aws_ami" {
   most_recent = true
 
   filter {
     name   = "name"
-    values = ["amzn-ami-hvm-.*.-x86_64-gp2"]
-  }
-  
-  filter {
-      name   = "architecture"
-      values = ["x86_64"]
-  }
-
-  filter {
-      name   = "root-device-type"
-      values = ["ebs"]
+    values = ["${var.aws_image}*"]
   }
 
   owners = ["${var.aws_ami_owner_id}"]
