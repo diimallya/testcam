@@ -30,7 +30,7 @@ variable "aws_region" {
  
 variable "aws_ami_owner_id" {
   description = "AWS AMI Owner ID"
-  default     = "938135568375"
+  default     = "amazon"
 }
 
 variable "aws_image" {
