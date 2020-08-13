@@ -51,7 +51,7 @@
       "label": "Aws Key Pair Name",
       "description": "AWS Key Pair Name",
       "type": "string",
-      "default": "",
+      "default": "ec2kp",
       "validation": "",
       "group_name": "instances",
       "required": true,

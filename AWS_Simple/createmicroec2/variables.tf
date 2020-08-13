@@ -19,6 +19,7 @@ variable "aws_instance_name" {
 variable "aws_key_pair_name" {
   type = "string"
   description = "AWS Key Pair Name"
+  default = "ec2kp"
 }
 
 variable "aws_region" {
