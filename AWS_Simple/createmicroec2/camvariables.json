@@ -79,7 +79,7 @@
       "label": "Aws Ami Owner Id",
       "description": "AWS AMI Owner ID",
       "type": "string",
-      "default": "938135568375",
+      "default": "amazon",
       "validation": "",
       "group_name": "",
       "required": true,
