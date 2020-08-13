@@ -47,6 +47,8 @@ data "aws_ami" "aws_ami" {
     name   = "name"
     values = ["${var.aws_image}*"]
   }
-
-  owners = ["${var.aws_ami_owner_id}"]
+  filter {
+    name = "owner-id"
+    values = ["${var.aws_ami_owner_id}"]
+  }
 }
