@@ -15,3 +15,11 @@ output "sample_message" {
 output "vm_ssh_private_key" {
   value = "${tls_private_key.ssh.private_key_pem}"
 }
+
+output "camtags_tagsmap" {
+  value = "${module.camtags.tagsmap}"
+}
+
+output "camtags_tagslist" {
+  value = "${module.camtags.tagslist}"
+}

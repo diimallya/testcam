@@ -24,13 +24,14 @@
       "description": "AWS Image Instance Size",
       "type": "string",
       "default": "t2.micro",
-      "validation": "",
+      "regex": "",
       "group_name": "",
       "required": true,
       "secured": false,
       "hidden": false,
       "immutable": false,
-      "immutable_after_create": false
+      "immutable_after_create": false,
+      "validation": ""
     },
     {
       "name": "aws_instance_name",
@@ -38,13 +39,14 @@
       "description": "AWS Instance Name",
       "type": "string",
       "default": "projectdemo",
-      "validation": "",
+      "regex": "",
       "group_name": "instances",
       "required": true,
       "secured": false,
       "hidden": false,
       "immutable": false,
-      "immutable_after_create": false
+      "immutable_after_create": false,
+      "validation": ""
     },
     {
       "name": "aws_key_pair_name",
@@ -52,13 +54,14 @@
       "description": "AWS Key Pair Name",
       "type": "string",
       "default": "ec2kp",
-      "validation": "",
+      "regex": "",
       "group_name": "instances",
       "required": true,
       "secured": false,
       "hidden": false,
       "immutable": false,
-      "immutable_after_create": false
+      "immutable_after_create": false,
+      "validation": ""
     },
     {
       "name": "aws_region",
@@ -66,13 +69,14 @@
       "description": "AWS Region",
       "type": "string",
       "default": "us-east-2",
-      "validation": "",
+      "regex": "",
       "group_name": "",
       "required": true,
       "secured": false,
       "hidden": false,
       "immutable": false,
-      "immutable_after_create": false
+      "immutable_after_create": false,
+      "validation": ""
     },
     {
       "name": "aws_ami_owner_id",
@@ -80,13 +84,14 @@
       "description": "AWS AMI Owner ID",
       "type": "string",
       "default": "amazon",
-      "validation": "",
+      "regex": "",
       "group_name": "",
       "required": true,
       "secured": false,
       "hidden": false,
       "immutable": false,
-      "immutable_after_create": false
+      "immutable_after_create": false,
+      "validation": ""
     },
     {
       "name": "aws_image",
@@ -94,13 +99,14 @@
       "description": "Operating system image id / template that should be used when creating the virtual image",
       "type": "string",
       "default": "amzn2-ami-hvm-2.0.20200617.0-x86_64-gp2",
-      "validation": "",
+      "regex": "",
       "group_name": "",
       "required": true,
       "secured": false,
       "hidden": false,
       "immutable": false,
-      "immutable_after_create": false
+      "immutable_after_create": false,
+      "validation": ""
     }
   ],
   "template_output_params": [
@@ -128,6 +134,26 @@
       "name": "vm_ssh_private_key",
       "label": "Vm Ssh Private Key",
       "description": "",
+      "group_name": "",
+      "secured": false,
+      "hidden": false,
+      "shortname": "",
+      "type": "string"
+    },
+    {
+      "name": "camtags_tagsmap",
+      "label": "Camtags Tagsmap",
+      "description": null,
+      "group_name": "",
+      "secured": false,
+      "hidden": false,
+      "shortname": "",
+      "type": "string"
+    },
+    {
+      "name": "camtags_tagslist",
+      "label": "Camtags Tagslist",
+      "description": null,
       "group_name": "",
       "secured": false,
       "hidden": false,
